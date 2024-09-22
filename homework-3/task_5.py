@@ -24,7 +24,6 @@ print("price on date :", bitcoin_price_on_date)
 if bitcoin_price_on_date is None:
   print(f"Sorry, no Bitcoin price data available for {date_input_of_purchased_bitcoin}. Please try a different date.")
 else:
-  
    bitcoin_price_today = bitcoin_converter.get_latest_price("USD")
 # გადახდილი თანხის რაოდენობის მიხედვით შეძენილი ბიტკოინების რაოდენობა
    amount_of_bitcoin = bitcoin_parchase_ammount / bitcoin_price_on_date
