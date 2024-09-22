@@ -7,6 +7,7 @@ Enter number: 18
 1 2 3 6 9 18
 """
 positive_integer = int(input("Please enter positive integer:"))
+print("The divisors of the number are :", end = " ")
 
 if positive_integer <= 0 or positive_integer >= 1000:
   print("Invalid Input")
@@ -14,4 +15,5 @@ if positive_integer <= 0 or positive_integer >= 1000:
 
 for num in range(1, positive_integer +1):
     if positive_integer % num == 0:
-      print(num)
+      print(f"{num}",  end=" " )
+  
