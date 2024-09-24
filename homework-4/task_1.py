@@ -17,4 +17,4 @@ for i in range (number_of_players):
     
     print(dice_1, dice_2)
   
-       
+   
