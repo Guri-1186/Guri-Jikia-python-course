@@ -14,3 +14,4 @@ birth_date = int(input("Please enter your birth date :"))
 weekday_in_num = date(birth_year, birth_month, birth_date).weekday()
 weekday_name = day_name[weekday_in_num]
 print(f"You were born on a {weekday_name}")
+
