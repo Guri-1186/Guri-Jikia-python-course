@@ -8,8 +8,9 @@ num = 1
 while num <= 9:
     multiplier =1
     while multiplier <= 9:
-        value = num * multiplier
-        print(f"{num} * {multiplier} = {value}")
+        if num >= multiplier:
+           value = num * multiplier
+           print(f"{num} * {multiplier} = {value}", end = "\t")
         multiplier += 1
     num += 1    
     print()
