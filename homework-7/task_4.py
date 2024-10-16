@@ -23,46 +23,19 @@ for letter in text:
         output_text+=letter
     else:
         if direction == "encode":
-          shifted_postion = keyboard_layout.index(letter)+1
-          shifted_postion%=len(keyboard_layout)
-          output_text+=keyboard_layout[shifted_postion]
+            shifted_position = keyboard_layout.index(letter)+1
+            shifted_position %= len(keyboard_layout)
+            output_text+=keyboard_layout[shifted_position]
         else:
-          shifted_postion = keyboard_layout.index(letter)-1
-          shifted_postion%=len(keyboard_layout)
-          output_text+=keyboard_layout[shifted_postion]
-            
+            shifted_position = keyboard_layout.index(letter)-1
+            shifted_position %= len(keyboard_layout)
+            output_text+=keyboard_layout[shifted_position]
 print(output_text)
-        
-    
-    
+            
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# output_text =""
-# for letter in text:
-#     if letter not in keyboard_layout:
-#        output_text+=letter
-#     else:
-#         shifted_position = keyboard_layout.index(letter) +1
-#         shifted_position %=len(keyboard_layout)
-#         print(shifted_position)
-#         output_text+=keyboard_layout[shifted_position]
-   
-# print(output_text)
 
 
 
