@@ -11,7 +11,6 @@ while True:
     else:
         print("Please enter string ")
 
-
 output = ""
 for char in input_1:
    if char in input_2 and len(input_1) == len(input_2):
