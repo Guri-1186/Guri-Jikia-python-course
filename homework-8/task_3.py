@@ -1,4 +1,3 @@
-from datetime import datetime
 
 """
 3. დაწერეთ პროგრამა რომელიც მიიღებს თარიღს. 
