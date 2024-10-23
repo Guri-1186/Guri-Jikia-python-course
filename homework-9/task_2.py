@@ -20,7 +20,5 @@ for i in range (number):
     b = random.random()
  
     if math.sqrt(a ** 2 + b ** 2) <=1:
-      counter +=1
-    
+      counter +=1   
 print(4 * counter / number)
-    
