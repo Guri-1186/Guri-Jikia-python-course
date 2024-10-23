@@ -1,5 +1,21 @@
-"""
-მეორე ამოცანისთვის turtle(ან თქვენთვის სასურველი ნებისმიერი სხვა ბიბლიოთეკით)
-გააკეთეთ ვიზუალიზაცია. Დახატეთ XOY საკოორდინატო სიბრტყე და ამ სიბრტყეზე დაიტანეთ წერტილები. Ისეთი წერტილები, რომლებიც აკმაყოფილებენ პირობას math.sqrt(a ** 2 + b ** 2) <=1, გააფერადეთ წითლად, 
-სხვა დანარჩენი მწვანედ. 
-"""
+
+import turtle
+
+screen = turtle.Screen()
+screen.setup(600,600)
+t = turtle.Turtle()
+
+t.penup()
+t.goto(-250, 0)
+t.pendown()
+t.forward(500)
+
+t.penup()
+t.goto(0, -250)
+t.setheading(90)
+t.pendown()
+t.forward(500)
+
+
+
+screen.exitonclick()
