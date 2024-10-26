@@ -19,7 +19,4 @@ def car_info(manufacturer, release_year = 2024, *args):
    
 car_info("mercedes")
 car_info("BMW", 2023)
-car_info("porshe", 2020, "white"," in the best condition", "hybrid")
-
-
-    
+car_info("porshe", 2020, "white"," in the best condition", "hybrid")   

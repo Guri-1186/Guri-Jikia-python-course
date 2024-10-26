@@ -11,8 +11,4 @@ def factorial(num):
     return output
 
 print(factorial(5))
-print(factorial(10))
-    
-    
-    
-        
+print(factorial(10))      
