@@ -13,8 +13,7 @@ def GCD(a,b):
         result = a % b
         a,b = b,result
     return a
-
-      
+ 
 def GCD_rec(a,b):
     if b == 0:
         return a
@@ -22,8 +21,13 @@ def GCD_rec(a,b):
        return  GCD_rec(b, a%b)
             
 def main():
-    print(GCD(48, 18)) #6
-    print(GCD_rec(48, 18)) #6
+    a = int(input("Enter first number : "))
+    b = int(input("Enter second number :"))
+    output = (GCD(a,b))
+    print(f"GCD of {a} and {b} is {output}")
+   
+    output = (GCD_rec(a,b))
+    print(f"GCD_rec of {a} and {b} is {output}")
     
 if __name__ == '__main__':
     main()
