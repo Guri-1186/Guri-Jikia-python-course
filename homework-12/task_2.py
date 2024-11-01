@@ -9,8 +9,8 @@ import random
 """
 list_1 = []
 def random_numbers_generator():
-    for _ in range(50): 
-        random_num = random.randint(1, 30) 
+    for _ in range(3): 
+        random_num = random.randint(1, 3) 
         list_1.append(random_num)
     return list_1
 
