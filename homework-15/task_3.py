@@ -9,7 +9,7 @@ def get_friends():
     friends = {} 
     while True:
         user_input = input("Enter names (e.g.'Giorgi - Nini') or 'FINISH': ").lower()
-        if user_input == "FINISH":
+        if user_input == "finish":  
             break
         if " - " in user_input:
             name1, name2 = user_input.split(" - ")  
