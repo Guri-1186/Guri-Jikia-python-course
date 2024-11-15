@@ -8,7 +8,7 @@
 def get_friends():
     friends = {} 
     while True:
-        user_input = input("Enter names (e.g.'Giorgi - Nini') or 'FINISH': ")
+        user_input = input("Enter names (e.g.'Giorgi - Nini') or 'FINISH': ").lower()
         if user_input == "FINISH":
             break
         if " - " in user_input:
