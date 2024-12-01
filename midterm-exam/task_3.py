@@ -19,10 +19,9 @@ from random import choice
 """
 import random
 def generate_choice():
-
     return random.choice(['R', 'P', 'S'])
+
 def determine_winner(user_choice, computer_choice):
-  
     if user_choice == computer_choice:
         return "Tie"
     elif (user_choice == 'R' and computer_choice == 'S') or \
@@ -34,19 +33,21 @@ def determine_winner(user_choice, computer_choice):
 
 def main():
     while True:
-    
-        user_choice = input("Choose R (Rock), P (Paper), or S (Scissors): ").upper()
-        
+        user_choice = input("შეიყვანეთ R (Rock), P (Paper), ან S (Scissors): ").upper()
+        if user_choice not in ['R', 'P', 'S']:
+            print("არასწორი არჩევანი, სცადეთ კიდევ ერთხელ.")
+            continue
         computer_choice = generate_choice()
-        print(f"Computer chose: {computer_choice}")
-        
+        print(f"კომპიუტერის არჩევანი: {computer_choice}")
         result = determine_winner(user_choice, computer_choice)
-        
         if result == "Tie":
-            print("It's a tie! Play again.")
+            print("ყაიმი! სცადეთ კიდევ ერთხელ.")
         elif result == "User":
-            print("You win!")
+            print("თქვენ გაიმარჯვეთ!")
             break
         else:
-            print("Computer wins!")
+            print("კომპიუტერმა გაიმარჯვა!")
             break
+
+if __name__ == "__main__":
+    main()
