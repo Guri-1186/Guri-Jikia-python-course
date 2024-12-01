@@ -9,20 +9,17 @@
 """
 
 def calc_num(num):
-    result = []
-    for i in range(1, num + 1):
-        if i % 13 == 0:
-            result.append(i)
+    result = [i for i in range(1, num + 1) if i % 13 == 0]
     return result
          
 def main():
-    user_input = int(input("please enter number :"))
-    if user_input <= 10 or user_input >= 432:
-        print("Please enter valid number :")
+    user_input = int(input("გთხოვთ შეიყვანოთ მთელი რიცხვი 10-დან 5432-მდე: "))
+    if user_input < 10 or user_input > 5432:
+        print("არასწორი რიცხვი.")
         exit()
-print(calc_num(13))
+    results = calc_num(user_input)
+    print(f"13-ის ჯერადი რიცხვებია: {results}")
+    print(f"ჯერადების რაოდენობა: {len(results)}")
 
 if __name__ == "__main__":
     main()
-    
-    
