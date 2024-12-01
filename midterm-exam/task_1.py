@@ -6,10 +6,15 @@
 ფორმატში: Hello სახელი გვარი. Age: ასაკი. City: ქალაქი.
 """
 
-def personal_info (name, surname, age, city):
-    print(f"Hello {name}, {surname} Age: {age} City:{city}")
-
+def personal_info(name, surname, age, city):
+    print(f"Hello {name} {surname}.")
+    print(f"Age: {age}.")
+    print(f"City: {city}.")
 def main():    
-    personal_info("guri", "jikia", 30, "Tbilisi")
+    name = input("Enter your name: ")
+    surname = input("Enter your surname: ")
+    age = input("Enter your age: ")
+    city = input("Enter your city: ")
+    personal_info(name, surname, age, city)
 if __name__ == "__main__":
     main()
